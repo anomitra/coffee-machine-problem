@@ -15,6 +15,9 @@ class CoffeeMachine:
     """
     def __init__(self, outlets):
         try:
+            outlets = float(outlets)
+            if not outlets.is_integer():
+                raise ValueError
             outlets = int(outlets)
             if outlets < 1:
                 raise ValueError
