@@ -20,6 +20,7 @@ class CoffeeMachine:
                 raise ValueError
         except ValueError:
             print("Invalid outlet count! Please provide a positive number.")
+            exit(0)
         self.outlets = outlets
         self.ingredients = defaultdict()
 
